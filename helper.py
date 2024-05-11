@@ -188,8 +188,9 @@ async def send_doc(bot: Client, m: Message,cc,ka,cc1,prog,count,name):
     
     
 async def send_vid(bot: Client, m: Message,cc,filename,thumb,name,prog):
-	
-    subprocess.run(f'ffmpeg -i "{filename}" -ss 00:01:00 -vframes 1 "{filename}.jpg"', shell=True)
+	    # Add PNG overlay to the video
+    overlay_path = "watermark.png"
+    subprocess.run(f'ffmpeg -i "{filename}" -i "{overlay_path}" -filter_complex "overlay=(main_w-overlay_w-10):(main_h-overlay_h-10)" -c:a copy -preset ultrafast "{filename}.jpg"', shell=True)
     await prog.delete (True)
     reply = await m.reply_text(f"**Uploading ... by Love ❤️** - `{name}`")
     try:
