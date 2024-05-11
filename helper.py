@@ -102,7 +102,7 @@ def vid_info(info):
                     
                     new_info.update({f'{i[2]}':f'{i[0]}'})
                     
-       except:
+            except:
                 pass
     return new_info
     
