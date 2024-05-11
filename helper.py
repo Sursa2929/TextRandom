@@ -206,12 +206,13 @@ async def send_vid(bot: Client, m: Message,cc,filename,thumb,name,prog):
     start_time = time.time()
 
     try:
-        await m.reply_video({filename}_temp.mp4,caption=cc, supports_streaming=True,height=720,width=1280,thumb=thumbnail,duration=dur, progress=progress_bar,progress_args=(reply,start_time))
+        await m.reply_video(f"{filename}_temp.mp4", caption=cc, supports_streaming=True, height=720, width=1280, thumb=thumbnail, duration=dur, progress=progress_bar, progress_args=(reply, start_time))
     except Exception:
-        await m.reply_document(filename,caption=cc, progress=progress_bar,progress_args=(reply,start_time))
+        await m.reply_document({filename}, caption=cc, progress=progress_bar, progress_args=(reply, start_time))
+
+    # Clean up temporary files
     os.remove(filename)
-    
     os.remove(f"{filename}_temp.mp4")
-    await reply.delete (True)
+    await reply.delete(True)
     
     #Bot Created by Surya Bishnoi love ❤️ B 
