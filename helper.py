@@ -190,7 +190,7 @@ async def send_doc(bot: Client, m: Message,cc,ka,cc1,prog,count,name):
 async def send_vid(bot: Client, m: Message,cc,filename,thumb,name,prog):
 	    # Add PNG overlay to the video
     overlay_path = "watermark.png"
-    subprocess.run(f'ffmpeg -i "{filename}" -i "{overlay_path}" -filter_complex "overlay=(main_w-overlay_w-10):(main_h-overlay_h-10)" -c:a copy -preset ultrafast "{filename}.jpg"', shell=True)
+    subprocess.run(f'ffmpeg -i "{filename}" -i "{overlay_path}" -filter_complex "overlay=(main_w-overlay_w-10):(main_h-overlay_h-10)" -c:a copy -preset ultrafast "{{filename}_temp.mp4"', shell=True)
     await prog.delete (True)
     reply = await m.reply_text(f"**Uploading ... by Love ❤️** - `{name}`")
     try:
@@ -206,12 +206,12 @@ async def send_vid(bot: Client, m: Message,cc,filename,thumb,name,prog):
     start_time = time.time()
 
     try:
-        await m.reply_video(filename,caption=cc, supports_streaming=True,height=720,width=1280,thumb=thumbnail,duration=dur, progress=progress_bar,progress_args=(reply,start_time))
+        await m.reply_video({filename}_temp.mp4,caption=cc, supports_streaming=True,height=720,width=1280,thumb=thumbnail,duration=dur, progress=progress_bar,progress_args=(reply,start_time))
     except Exception:
         await m.reply_document(filename,caption=cc, progress=progress_bar,progress_args=(reply,start_time))
     os.remove(filename)
     
-    os.remove(f"{filename}.jpg")
+    os.remove(f"{filename}_temp.mp4")
     await reply.delete (True)
     
     #Bot Created by Surya Bishnoi love ❤️ B 
