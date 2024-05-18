@@ -21,3 +21,9 @@ aiofiles
 pytz
 umongo==3.1.0
 speedtest-cli
+hachoir
+asyncio
+Pillow
+humanfriendly
+dnspython
+psutil
