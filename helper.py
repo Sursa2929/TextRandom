@@ -8,7 +8,6 @@ import time
 from p_bar import progress_bar
 import aiohttp
 import aiofiles
-import watermark.png
 import tgcrypto
 import concurrent.futures
 import subprocess
