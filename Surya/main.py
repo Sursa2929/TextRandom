@@ -4,8 +4,8 @@ import json
 import subprocess
 from logger import logging
 from pyrogram import Client, filters
-from sudoers import *
-from button import keyboard
+from love.helpers.sudoers import *
+from love.helpers.button import keyboard
 from pyrogram.types.messages_and_media import message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import FloodWait
