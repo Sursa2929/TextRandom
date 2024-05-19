@@ -12,17 +12,6 @@ API_HASH = os.environ.get("API_HASH")
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
-AUTH_USERS = os.environ.get("AUTH_USERS")
-sudo_users = "841021123"
-
-osowner_users = os.environ.get("OWNER_USERS")
-owner_users = "841021123"
-
-
-
-
-
-"""
 PASS_DB = int(os.environ.get("PASS_DB", "721"))
 
 OWNER = int(os.environ.get("OWNER", 841021123))
@@ -34,6 +23,14 @@ try:
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 ADMINS.append(OWNER)
+
+
+"""
+AUTH_USERS = os.environ.get("AUTH_USERS")
+sudo_users = "841021123"
+
+osowner_users = os.environ.get("OWNER_USERS")
+owner_users = "841021123"
 
 api_id = 28136850
 api_hash = "ef27e112f853d3779d38204f7800ba24"
