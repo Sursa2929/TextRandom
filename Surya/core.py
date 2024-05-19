@@ -192,7 +192,7 @@ async def send_vid(bot: Client, m: Message,cc,filename,thumb,name,prog):
     overlay_path = "watermark.png"
     subprocess.run(f'ffmpeg -i "{filename}" -ss 00:00:12 -vframes 1 "{filename}.jpg"', shell=True)
     await prog.delete (True)
-    reply = await m.reply_text(f"**Uploading ... by Love ❤️** - `{name}`")
+    reply = await m.reply_text(f"**Uploading ... by 『 𝐁𝐢𝐬𝐡𝐧𝐨𝐢 ™』 ❤️** \n\n Name - `{name}` \n\n तुम्हारे दिल की चुभन भी जरूर कम होगी तुम किसी के पांव का काँटा निकालकर तो देखो ❤️")
     try:
         if thumb == "No":
             thumbnail = f"{filename}.jpg"
