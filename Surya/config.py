@@ -12,10 +12,11 @@ API_HASH = os.environ.get("API_HASH")
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
-auth_users = os.environ.get("AUTH_USERS").split(","))
+auth_users = os.environ.get("AUTH_USERS").split(",")
+sudo_users = auth_users
 
-osowner_users = os.environ.get("OWNER_USERS").split(","))
-
+osowner_users = os.environ.get("OWNER_USERS").split(",")
+owner_users = osowner_users
 
 
 
