@@ -4,8 +4,6 @@ import json
 import subprocess
 from logger import logging
 from pyrogram import Client, filters
-from love.helpers.sudoers import *
-from love.helpers.button import keyboard
 from pyrogram.types.messages_and_media import message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import FloodWait
@@ -24,6 +22,33 @@ import re
 import os                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 
 #Bot created by surya bishnoi love ❤️ B
+
+def one(user_id):
+    if user_id in sudo_users:
+        return True
+    return False
+
+def two(user_id):
+    if user_id in owner_users:
+        return True
+    return False
+
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
+
+#Bot Created by Surya Bishnoi love ❤️ B 
+
+
+keyboard = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton(
+                text="Developer",
+                url="https://telegram.me/TheBishnoi29_bot",
+            ),
+        ],
+    ]
+)
+
 
 bot = Client("bot",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
              bot_token=os.environ.get("BOT_TOKEN"),                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
