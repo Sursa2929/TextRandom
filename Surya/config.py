@@ -25,8 +25,8 @@ owner_users = [int(num) for num in osowner_users.split(",")]
 
 
 
-
-```PASS_DB = int(os.environ.get("PASS_DB", "721"))
+"""
+PASS_DB = int(os.environ.get("PASS_DB", "721"))
 
 OWNER = int(os.environ.get("OWNER", 841021123))
 
@@ -44,4 +44,5 @@ bot_token = "7056596416:AAFp3ZH8ugPoHlNKysl7jwlO8Kx08wULSXM"
 auth_users = "841021123"
 sudo_users = [int(num) for num in auth_users.split(",")]
 osowner_users = "841021123"
-owner_users = [int(num) for num in osowner_users.split(",")]```
+owner_users = [int(num) for num in osowner_users.split(",")]
+"""
