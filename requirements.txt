@@ -26,7 +26,3 @@ hachoir
 asyncio
 Pillow
 humanfriendly
-dnspython
-psutil
-humanize
-cryptg
