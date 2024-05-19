@@ -22,6 +22,14 @@
         "BOT_TOKEN": {
             "description": "Enter your bot token You can generate by @BotFather",
             "required": true
+        },
+        "OWNER_USERS": {
+            "description": "multi id use comma (,)",
+            "required": true
+        },
+        "AUTH_USERS": {
+            "description": "Multi id use comma (,)",
+            "required": true
         }
     },
     "addons": [],
