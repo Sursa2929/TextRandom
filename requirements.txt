@@ -28,7 +28,6 @@ Pillow
 humanfriendly
 dnspython
 psutil
-pycurl
 humanize
 cryptg
 python-decouple
