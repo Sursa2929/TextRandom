@@ -70,8 +70,8 @@ async def restart_handler(_, m):
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id
     if user not in (ADMINS):
-        await m.reply_text(f"**Bhag bsdk jaa khud mehnat kar le**", quote=True)
-        await m.reply_text(reply_markup=keyboard)
+        await m.reply_text(f"**Tere Liye Nhin Banya hai bot, Kabhi khud Bhi Mehnat Kr lia Kro \n\n more info click 👇**", quote=True
+          ,reply_markup=keyboard)
         return
     else:
         editable = await m.reply_text('**Send TXT file for download**')
