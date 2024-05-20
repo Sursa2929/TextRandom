@@ -42,7 +42,7 @@ keyboard = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="Developer",
+                text="OWNER ➤『 𝐁𝐢𝐬𝐡𝐧𝐨𝐢 ™』❤️",
                 url="https://telegram.me/TheBishnoi29_bot",
             ),
         ],
@@ -58,7 +58,7 @@ bot = Client("bot",
 #============== Start Commands ==========#
 @bot.on_message(filters.command(["start"]))                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"HELLO [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n You Haven't buy Premium Contact OWNER 👇",
+    editable = await m.reply_text(f"**HELLO [{m.from_user.first_name}](tg://user?id={m.from_user.id}) \n 𝙔𝙤𝙪 𝙃𝙖𝙫𝙚𝙣'𝙩 𝙗𝙪𝙮 𝙋𝙧𝙚𝙢𝙞𝙪𝙢. \n\n 𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 『 𝐁𝐢𝐬𝐡𝐧𝐨𝐢 ™』❤️  \n\n ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴏᴡɴᴇʀ👇**",
                                   reply_markup=keyboard)
 
 #============== Stop Commands ==========#
@@ -73,7 +73,7 @@ async def restart_handler(_, m):
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id
     if user not in (ADMINS):
-        await m.reply_text(f"**Tere Liye Nhin Banya hai bot, Kabhi khud Bhi Mehnat Kr Le \n\n Contact to Owner 👇**", quote=True
+        await m.reply_text(f"**Tere Liye Nhin Banya hai bot, Kabhi khud Bhi Mehnat Kr Le \n\n 𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 『 𝐁𝐢𝐬𝐡𝐧𝐨𝐢 ™』❤️  \n\n ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴏᴡɴᴇʀ👇****", quote=True
           ,reply_markup=keyboard)
         return
     else:
